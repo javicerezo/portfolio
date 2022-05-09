@@ -1,0 +1,259 @@
+@media screen and(max-width: 950px) //tablets
+    main
+    .contacto
+        padding: 0 50px
+        .contenedor-form
+            display: block
+            .datos-contacto
+                position: relative
+                top: 80px
+                ul
+                    .iconos
+                        display: flex
+                        flex-direction: column
+        .mensaje__form
+            padding: 25px 0
+    #modales__listado
+        .modal
+            .modal__contenedor
+                width: 70%
+
+@media screen and(max-width: 780px) // Mobile horizontal
+    header
+        .contenedor__menu
+            background-color: $fondo
+            top: 0
+            .menu__izq
+                .titulo__menu  
+                    color: #000
+            .menu__der
+                width: 30%
+                margin: 0px
+                padding: 5px
+                flex-direction: column
+                justify-content: left
+                background-color: $fondoTransp
+                position: fixed
+                right: 0
+                top: 35px
+                height: 0
+                transition: all 0.3s ease
+                opacity: 0
+                visibility: hidden
+                li
+                    margin: 0
+                    border-bottom: 1px solid #000
+                    a
+                        font-size: 15px
+                        font-weight: 500
+                    a:hover
+                        transform: scale(1)
+            .icono_m
+                display: block
+                opacity: 1
+            input:checked ~ ul
+                height: 120px
+                visibility: visible
+                opacity: 1
+            input:checked ~ .icono_m
+                display: none
+                opacity: 0
+            input:checked ~ .icono_x
+                display: block
+                opacity: 1
+    .portada
+        .marco__sup
+            display: none
+        .marco__der
+            display: none
+        .marco__izq
+            display: none
+        .marco__inf
+            display: none
+    .portada:hover 
+        background-position: left !important
+        .contenedor
+            h1
+                transition-property: none
+                transform: scale(1) !important
+            h2
+                transition-property: none
+                transform: scale(1) !important
+            button
+                transition-property: none
+                transform: scale(1) !important
+    .separador-section
+        .tecnologias
+            padding: 0 15px
+        .iconos-tecnologias
+            grid-template-columns: repeat(7, 1fr)
+            li
+                font-size: 25px
+        .efecto-ola
+            left: 0
+            width: 100%
+    .porfolio
+        .trabajos-porfolio
+            grid-template-columns: repeat(2, 1fr)
+    #modales__listado
+        .modal
+            .modal__contenedor
+                width: 70%
+    .contacto
+        margin: 0px
+    footer
+        margin: 0px
+        .footer__flecha-arriba
+            display: block
+            margin-right: 30px          
+@media screen and(max-width: 575px) // Mobile vertical
+    header
+        .contenedor__menu
+            .menu__izq
+                padding-left: 20px
+    .portada
+        .contenedor
+            h1
+                font-size: 40px
+            h2
+                font-size: 17px
+            .boton
+                font-size: 14px
+    .sobreMi, .porfolio, .contacto
+        h3
+            font-size: 55px
+        h4
+            font-size: 25px
+    .separador-section
+        .tecnologias
+            .tarjeta
+                .descripcion
+                    .titulo
+                        font-size: 16px
+                    ul
+                        li
+                            font-size: 13px
+    .porfolio
+        .portfolio-titulo
+            h4
+                font-size: 20px
+
+    .contacto
+        .contenedor-form
+            .datos-contacto
+                ul
+                    padding-left: 0px
+                .redes-sociales
+                    margin-left: 0px
+            .formulario
+                .contenedor
+                    padding: 5px
+                    .btn-formulario
+                        margin: 0 5px
+                    .boton
+                        padding: 10px 15px
+                        font-size: 15px
+        .mensaje__form
+            .spinner
+                font-size: 15px 
+            .mensaje
+                p
+                    font-size: 15px
+    footer
+        grid-template-columns: repeat(6, 1fr)
+        .footer__nombre
+            grid-column: span 4
+            font-size: 18px
+            span
+                font-size: 13px
+        .footer__redes-sociales
+            a
+                font-size: 18px
+                margin: 10px
+        .footer__flecha-arriba
+            margin-right: 20px 
+            a
+                font-size: 18px
+    #modales__listado
+        .modal
+            .modal__contenedor
+                width: 80%
+                .parte_inferior
+                    .modal__parrafo
+                        font-size: 15px
+                    button
+                        font-size: 15px
+@media screen and(max-width: 480px) // Mobile vertical xs
+    .portada
+        .contenedor
+            h1
+                font-size: 35px
+            h2
+                font-size: 15px
+            button
+                font-size: 13px
+    .portada:hover
+        .contenedor
+            h1
+                transform: scale(1) !important
+            h2
+                transform: scale(1)
+            button
+                transform: scale(1)
+    .sobreMi, .porfolio, .contacto
+        h3
+            font-size: 45px
+        h4
+            font-size: 18px
+        .contenedor-desc
+            p
+                font-size: 15px
+    .separador-section
+        .tecnologias
+            .tarjeta
+                .descripcion
+                    .titulo
+                        font-size: 14px
+                    ul
+                        li
+                            font-size: 12px
+
+    .porfolio
+        .trabajos-porfolio
+            width: 65%
+            grid-template-columns: repeat(1, 1fr)
+
+    .contacto
+        .contenedor-form
+            .datos-contacto
+                ul
+                    .iconos
+                        i
+                            font-size: 14px
+                    .datos-iconos
+                        li
+                            font-size: 15px
+            .formulario
+                .contenedor
+                    padding: 0px
+    footer
+        .footer__nombre
+            font-size: 16px
+            span
+                font-size: 11px
+        .footer__redes-sociales
+            a
+                font-size: 16px
+                margin: 5px
+        .footer__flecha-arriba
+            a
+                font-size: 16px
+    #modales__listado
+        .modal
+            .modal__contenedor
+                width: 80%
+                .parte_inferior
+                    .modal__parrafo
+                        font-size: 13px
+                    button
+                        font-size: 13px

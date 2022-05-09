@@ -1,0 +1,40 @@
+footer
+    background: #000
+    height: 60px
+    margin: 0px 20px 20px 20px
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    .footer__nombre
+        grid-column: span 3
+        line-height: 60px
+        text-align: center
+        vertical-align: middle
+        color: #fff
+        font-weight: 400
+        font-size: 20px
+        span
+            font-size: 15px
+            font-style: italic
+    .footer__redes-sociales
+        grid-column: span 1
+        line-height: 60px
+        text-align: center
+        vertical-align: middle
+        a
+            margin: 15px
+            font-size: 20px
+            color: #fff
+        a:hover
+            color: $fondo
+    .footer__flecha-arriba
+        display: none
+        grid-column: span 1
+        line-height: 60px
+        text-align: right
+        vertical-align: middle
+        margin-right: 50px
+        a
+            color: #fff
+            font-size: 20px
+        a:hover
+            color: $fondo

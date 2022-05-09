@@ -1,0 +1,93 @@
+header
+    .contenedor__menu
+        .menu__der
+            li
+                a
+                    transition: all 0.3s ease
+                a:hover
+                    font-weight: 700
+                    color: $activo
+                    transform: scale(1.1)
+
+// @keyframes color
+//     0% { background-position: 0% 50%}
+//     100% { background-position: 100% 50%}
+
+.portada
+    transition: background-position 4s ease
+    .contenedor
+        // .javiCerezo
+        //     background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgb(255, 193, 0) 25px, rgb(255, 193, 0) 50px);    
+        //     background-clip: content-box
+        //     color: transparent 
+        //     background-color:#fff
+        //     animation: color 50s linear infinite
+        button:hover
+            background: #10209A40
+        a
+            transition: transform 1s ease
+        a:hover
+            transform: scale(1.2)
+    .marco__sup
+        transition: all 1s ease
+    .marco__inf
+        transition: all 1s ease
+    .marco__der
+        transition: all 1s ease
+    .marco__izq
+        transition: all 1s ease
+.portada:hover
+    background-position: bottom
+    .contenedor
+        h1
+            transition: all 2s ease
+            transform: scale(1.11)
+        h2
+            transition: all 2s ease
+            transform: scale(1.15)
+        .boton
+            transition: transform 2s ease
+            transform: scale(1.05)   
+.separador-section
+    .iconos-tecnologias
+        li
+            i
+                transition: all 0.5s ease
+            i:hover
+                transform: rotate(360deg)
+                cursor: pointer
+
+.trabajos-porfolio
+    .card
+        img
+            transition: opacity 0.3s ease
+        img:hover
+            opacity: 0.75
+
+
+@mixin transladarY($y)
+    .modal__contenedor         
+        transform: translateY($y)
+        transition: transform 0.8s ease 0.8s
+
+.modal
+    transition: opacity 0.6s
+    @include transladarY(-110vh)
+.modal--show
+    transition: opacity 0.6s 
+    @include transladarY(0)
+
+footer
+    .footer__nombre
+        transition: all 2s ease
+        opacity: 0
+        transform: translate(-500px, 0)
+    .footer__redes-sociales
+        transition: all 1.5s ease
+        opacity: 0
+        transform: translate(-300px, 0)
+    .footer__flecha-arriba
+        transition: all 1.5s ease
+        opacity: 0
+        transform: translate(-300px, 0)
+
