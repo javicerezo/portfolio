@@ -5,7 +5,8 @@ $fondoTransp: #ffc1007d
 $activo: #61CE70
 
 body
-    font-family: 'Open Sans', sans-serif;
+    font-size: 16px // 1rem = 10px
+    font-family: 'Open Sans', sans-serif
     background: #fff
     transition: all 0.3s ease
     &.darkmode
@@ -21,37 +22,17 @@ body
     cursor: pointer
 .btn-amarillo
     border: 2px solid $fondo
-    // background: $fondo
-
     background: rgb(255,193,0);
     background: -moz-radial-gradient(circle, rgba(255,193,0,0.6474964985994398) 0%, rgba(255,193,0,1) 75%);
     background: -webkit-radial-gradient(circle, rgba(255,193,0,0.6474964985994398) 0%, rgba(255,193,0,1) 75%);
     background: radial-gradient(circle, rgba(255,193,0,0.6474964985994398) 0%, rgba(255,193,0,1) 75%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc100",endColorstr="#ffc100",GradientType=1);
-
-
-    // background: -moz-radial-gradient(circle, rgba(255,193,0,1) 0%, rgba(255,193,0,0.6474964985994398) 70%);
-    // background: -webkit-radial-gradient(circle, rgba(255,193,0,1) 0%, rgba(255,193,0,0.6474964985994398) 70%);
-    // background: radial-gradient(circle, rgba(255,193,0,1) 0%, rgba(255,193,0,0.6474964985994398) 70%);
-    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc100",endColorstr="#ffc100",GradientType=1);
-    
-
-    // background: -moz-linear-gradient(90deg, rgba(255,193,0,0.6474964985994398) 10%, rgba(255,193,0,1) 90%);
-    // background: -webkit-linear-gradient(90deg, rgba(255,193,0,0.6474964985994398) 10%, rgba(255,193,0,1) 90%);
-    // background: linear-gradient(90deg, rgba(255,193,0,0.6474964985994398) 10%, rgba(255,193,0,1) 90%);
-    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc100",endColorstr="#ffc100",GradientType=1);
 .btn-amarillo:hover
-    // background: $fondoTransp
     background: rgb(255,193,0);
     background: -moz-radial-gradient(circle, rgba(255,193,0,1) 0%, rgba(255,193,0,0.6474964985994398) 40%);
     background: -webkit-radial-gradient(circle, rgba(255,193,0,1) 0%, rgba(255,193,0,0.6474964985994398) 40%);
     background: radial-gradient(circle, rgba(255,193,0,1) 0%, rgba(255,193,0,0.6474964985994398) 40%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc100",endColorstr="#ffc100",GradientType=1);
-
-    // background: -moz-linear-gradient(90deg, rgba(255,193,0,1) 20%, rgba(255,193,0,0.6474964985994398) 60%);
-    // background: -webkit-linear-gradient(90deg, rgba(255,193,0,1) 20%, rgba(255,193,0,0.6474964985994398) 60%);
-    // background: linear-gradient(90deg, rgba(255,193,0,1) 20%, rgba(255,193,0,0.6474964985994398) 60%);
-    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc100",endColorstr="#ffc100",GradientType=1);
 .color_activo
     color: $activo !important
 .color_fondo
