@@ -917,7 +917,7 @@ footer .footer__flecha-arriba {
         margin: 15px; }
         .modal .modal__contenedor .parte_inferior .modal__parrafo span {
           font-style: italic; }
-      .modal .modal__contenedor .parte_inferior button {
+      .modal .modal__contenedor .parte_inferior a {
         margin: 20px; }
 
 .modal--show {

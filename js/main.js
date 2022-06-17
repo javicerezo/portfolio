@@ -245,14 +245,7 @@
             e.stopImmediatePropagation();
             cerrarModal(i);
         })
-        // boton ver trabajo
-        modalesListado.children[i].children[0].children[3].children[1].addEventListener('click', e => {
-            e.preventDefault();
-            // e.stopPropagation();
-            console.log('boton ir a trabajo')
-        })
     })
-
 
     // FUNCIONES
     function scrolleaNav(ubicacionscroll) {
