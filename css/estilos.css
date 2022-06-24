@@ -1,5 +1,12 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 body {
-  font-size: 16px;
+  font-size: 1.6 rem;
   font-family: 'Open Sans', sans-serif;
   background: #fff;
   transition: all 0.3s ease; }
@@ -384,7 +391,6 @@ body {
     body.darkmode .sobreMi h3 span {
       color: #ffc1007d; }
   .sobreMi a {
-    width: 50px;
     margin: auto;
     text-decoration: none; }
 
