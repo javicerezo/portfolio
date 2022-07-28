@@ -1,0 +1,33 @@
+{
+  "name": "portfolio-javicerezo",
+  "version": "1.0.0",
+  "description": "Portfolio personal de trabajo. HTML, SASS, JavaScript, PHP y Gulp",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/sass/estilos.sass:src/css/estilos.css",
+    "css": "gulp css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javicerezo/portfolio.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "JavaScript",
+    "PHP"
+  ],
+  "author": "Javier Cerezo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javicerezo/portfolio/issues"
+  },
+  "homepage": "https://github.com/javicerezo/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.0"
+  }
+}
